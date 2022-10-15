@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+//max value wale index ko dhundne wala code using linear search 
+int peak_index (int arr[], int size) {
+    
+    int index=0;
+    for (int i=0; i<size; i++) {
+        
+            if (arr[0]<arr[i]) {
+
+                index=i;
+            }
+            
+            
+       
+    }
+    return index; 
+    
+    
+}
+
+int main() {
+    
+    int arr[6]={15,55,81,7,4,5};
+    int ans=peak_index(arr,6);
+    cout << ans;
+}
